@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Suhu</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <h1>KALKULATOR</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Konversi Suhu</h2>
+            <select id="suhu">
+                <option value="#cToF">Celsius To Fahrenheit</option>
+                <option value="#fToC">Fahrenheit To Celsius</option>
+            </select>
+
+            <div id="c-to-f">
+                <section class="a">
+                    <p>Masukkan suhu derajat Celsius (&deg;C) ke kotak di bawah ini, lalu klik tombol konversi untuk
+                        mendapatkan
+                        hasil konversi ke dalam bentuk Fahrenheit (&deg;F).</p>
+
+                    <section class="celsius">
+                        <header>
+                            <h4>Celsius (&deg;C)</h4>
+                        </header>
+                        <article>
+                            <input type="number" id="inputPengguna" placeholder="Masukkan Derajat Celsius"></input>
+                            <div class="container-button">
+                                <button id="convert">Konversi</button>
+                                <button id="reset">Reset</button>
+                                <button id="reverse">Reverse</button>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="fahrenheit">
+                        <header>
+                            <h4>Fahrenheit (&deg;F)</h4>
+                        </header>
+                        <article>
+                            <textarea readonly id="result" placeholder="Hasil Derajat Fahrenheit" cols="40"
+                                rows="1"></textarea>
+                        </article>
+                    </section>
+
+                    <section class="answer">
+                        <header>
+                            <h4>Cara Kalkulasi</h4>
+                        </header>
+                        <article>
+                            <textarea readonly id="hasilKalkulasi" placeholder="Cara Kalkulasi" cols="40"
+                                rows="4"></textarea>
+                        </article>
+                    </section>
+            </div>
+
+
+            <div id="f-to-c">
+                <section class="b hidden">
+                    <p>Masukkan suhu derajat Fahrenheit (&deg;F) ke kotak di bawah ini, lalu klik tombol konversi untuk
+                        mendapatkan
+                        hasil konversi ke dalam bentuk Celsius (&deg;C).</p>
+
+                    <section class="fahrenheit">
+                        <header>
+                            <h4>Fahrenheit (&deg;C)</h4>
+                        </header>
+                        <article>
+                            <input type="number" id="inputPengguna" placeholder="Masukkan Derajat Fahrenheit"></input>
+                            <div class="container-button">
+                                <button id="convert">Konversi</button>
+                                <button id="reset">Reset</button>
+                                <button id="reverse">Reverse</button>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="celsius">
+                        <header>
+                            <h4>Celsius (&deg;F)</h4>
+                        </header>
+                        <article>
+                            <textarea readonly id="result" placeholder="Hasil Derajat Celsius" cols="40"
+                                rows="1"></textarea>
+                        </article>
+                    </section>
+
+                    <section class="answer">
+                        <header>
+                            <h4>Cara Kalkulasi</h4>
+                        </header>
+                        <article>
+                            <textarea readonly id="hasilKalkulasi" placeholder="Cara Kalkulasi" cols="40"
+                                rows="4"></textarea>
+                        </article>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div footer-content>
+            <p>&copy 2024 Kalkulator Suhu by Galih. All Right Reserved.</p>
+        </div>
+    </footer>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
